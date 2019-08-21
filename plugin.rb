@@ -1,4 +1,4 @@
-# name: feature-phone-first
+# name: discourse-custom-header
 # version: 0.1
 
 after_initialize do
