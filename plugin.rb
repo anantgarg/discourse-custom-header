@@ -5,7 +5,7 @@ after_initialize do
   ApplicationController.class_eval do
     def set_layout
       if basic?
-        File.expand_path('../app/views/layouts/basic.html.erb', __FILE__)
+        File.expand_path('../app/views/layouts/_head.html.erb', __FILE__)
       else
         'application'
       end
