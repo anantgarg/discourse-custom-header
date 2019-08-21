@@ -1,23 +1,8 @@
 # name: discourse-custom-header
 # version: 0.1
 
-after_initialize do
-  ApplicationController.class_eval do
-    def set_layout
-      if basic?
-        File.expand_path('../app/views/layouts/_head.html.erb', __FILE__)
-      else
-        'application'
-      end
-    end
+after_initialize {
 
-    private
+  ::ActionMailer::Base.prepend_view_path File.expand_path("../custom_views", __FILE__)
 
-    def basic?
-      request.host =~ /^basic\.discourse\.dev/
-    end
-  end
-end
-
-
-
+}
