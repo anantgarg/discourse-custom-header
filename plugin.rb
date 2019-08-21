@@ -1,5 +1,5 @@
 # name: discourse-custom-header
-# version: 0.2
+# version: 0.3
 
 after_initialize {
 
