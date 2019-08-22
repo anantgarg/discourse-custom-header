@@ -12,6 +12,7 @@ after_initialize do
 
 #  Rails.configuration.paths["app/views"].unshift(File.expand_path("../app/views", __FILE__))
        
- remove_file 'app/views/layouts/application.html.erb'
+# remove_file 'app/views/layouts/_head.html.erb'
+ gsub_file  'app/views/layouts/_head.html.erb',/.*/,'TEST'
 
 end
