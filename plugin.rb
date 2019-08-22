@@ -1,5 +1,8 @@
 # name: discourse-custom-header
-# version: 0.3
+# about: Custom header
+# version: 0.4
+# authors: Angus McLeod
+# url: https://github.com/anantgarg/discourse-custom-header
 
 after_initialize do
 
