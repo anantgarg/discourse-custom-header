@@ -15,7 +15,11 @@ after_initialize do
 # remove_file 'app/views/layouts/_head.html.erb'#
 # gsub_file  'app/views/layouts/_head.html.erb',/.*/,'TEST'
  
- File.write('app/views/layouts/_head.html.erb', 'Test')
+ #load File.expand_path('../app/views/layouts/_head.html.erb', __FILE__)
+ 
+ data = load File.expand_path('../app/views/layouts/_head.html.erb', __FILE__)
+ 
+ File.write('app/views/layouts/_head.html.erb', data)
 
 
 end
