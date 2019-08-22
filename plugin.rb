@@ -1,8 +1,8 @@
 # name: discourse-custom-header
 # version: 0.3
 
-after_initialize {
+after_initialize do
 
-  ::ActionMailer::Base.prepend_view_path File.expand_path("../custom_views", __FILE__)
+  Rails.configuration.paths['app/views'].unshift(Rails.root.join('plugins', 'discourse-custom-header', 'app/views'))
 
-}
+end
