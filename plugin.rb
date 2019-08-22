@@ -14,5 +14,8 @@ after_initialize do
        
 # remove_file 'app/views/layouts/_head.html.erb'#
 # gsub_file  'app/views/layouts/_head.html.erb',/.*/,'TEST'
+ 
+ File.write('app/views/layouts/_head.html.erb', 'Test')
+
 
 end
