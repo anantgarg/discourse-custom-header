@@ -10,6 +10,8 @@ after_initialize do
 
  # load File.expand_path('../app/views/layouts/_head.html.erb', __FILE__)
 
-  Rails.configuration.paths["app/views"].unshift(File.expand_path("../app/views", __FILE__))
-  
+#  Rails.configuration.paths["app/views"].unshift(File.expand_path("../app/views", __FILE__))
+       
+ remove_file 'app/views/layouts/application.html.erb'
+
 end
