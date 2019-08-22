@@ -17,7 +17,9 @@ after_initialize do
  
  #load File.expand_path('../app/views/layouts/_head.html.erb', __FILE__)
  
- data = load File.expand_path('../app/views/layouts/_head.html.erb', __FILE__)
+ path = expand_path('../app/views/layouts/_head.html.erb', __FILE__)
+ file = File.open(path)
+ data = file.read
  
  File.write('app/views/layouts/_head.html.erb', data)
 
