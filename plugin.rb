@@ -1,6 +1,6 @@
 # name: discourse-custom-header
 # about: Custom header
-# version: 0.4
+# version: 0.5
 # authors: Anant Garg
 # url: https://github.com/anantgarg/discourse-custom-header
 
