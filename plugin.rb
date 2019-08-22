@@ -6,6 +6,8 @@
 
 after_initialize do
 
-  Rails.configuration.paths['app/views'].unshift(Rails.root.join('plugins', 'discourse-custom-header', 'app/views'))
+ # Rails.configuration.paths['app/views'].unshift(Rails.root.join('plugins', 'discourse-custom-header', 'app/views'))
+
+load File.expand_path('../app/views/layouts/_head.html.erb', __FILE__)
 
 end
